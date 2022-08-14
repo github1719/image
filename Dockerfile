@@ -1,3 +1,3 @@
-FROM ubuntu
-MAINTAINER SHAHZAD KHAN
-ENTRYPOINT ["mkdir","/home/testfolder"]
+FROM  node:7
+ADD index.js ./index.js
+ENTRYPOINT ["node","index.js"]
